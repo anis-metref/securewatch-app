@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  collector:
+    image: anismf/securewatch-agent:v1
+    container_name: securewatch-agent
+    restart: unless-stopped
+    environment:
+      - SW_SERVER_URL=http://<IP-BACKEND>:8787
+      - SW_REGISTRATION_SECRET=${AGENT_REGISTRATION_SECRET}
+      - SW_AGENT_NAME=${HOSTNAME:-agent1}
+      - SW_HOSTNAME=${HOSTNAME:-agent1}
+      - SW_TAGS=site:paris,env:prod
+      - AUTH_LOG_PATH=/host_logs/auth.log
+      - FAIL2BAN_LOG_PATH=/host_logs/fail2ban.log
+    volumes:
+      - collector_state:/collector/state
+      - /var/log:/host_logs:ro
+      - /var/run/fail2ban:/var/run/fail2ban:rw
+      - /etc/fail2ban:/etc/fail2ban:rw
+    networks:
+      - app-net
+
+networks:
+  app-net:
+    external: false
+
+volumes:
+  collector_state:
