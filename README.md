@@ -47,6 +47,11 @@ sudo usermod -aG docker "$USER"
 
 Reconnectez-vous pour que les droits Docker soient pris en compte.
 
+## Télécharger les fichiers
+```
+git clone https://github.com/anis-metref/securewatch-app.git
+cd securewatch-app
+```
 
 ```bash
 sudo cp jail-sshd.conf /etc/fail2ban/jail.d/jail-sshd,conf
@@ -132,6 +137,7 @@ L’agent embarque un script Python qui surveille en continu les logs, formate l
 Dans le dossier contenant `docker-compose.agent.yml` et le `.env` :
 
 ```bash
+cd agent
 docker compose up -d
 ```
 
