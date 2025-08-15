@@ -6,11 +6,11 @@
 
 ## Architecture technique
 
-**SecureWatch** repose sur une stack moderne et légère :
-**Backend** : Node.js et SQLite
-**Frontend** : React avec Vite
-**Serveur web** : Nginx
-**Conteneurisation** : Docker + Docker Compose
+- **SecureWatch** repose sur une stack moderne et légère :
+- **Backend** : Node.js et SQLite
+- **Frontend** : React avec Vite
+- **Serveur web** : Nginx
+- **Conteneurisation** : Docker + Docker Compose
 
 ## Fonctionnalités principales
 
