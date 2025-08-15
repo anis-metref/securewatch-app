@@ -141,4 +141,4 @@ L’agent se connecte automatiquement au serveur et apparaît dans l’interface
 
 - Pour retirer un agent à tout moment, stoppez ou supprimez son container et/ou son token d’enregistrement depuis l’UI.  
 - Vous pourrez bannir et débannir les IP de ce client directement depuis le tableau de bord et suivre ses événements SSH en temps réel.
-
+![agent-events](./screens/3.png)
