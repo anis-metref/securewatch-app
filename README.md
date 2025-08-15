@@ -120,7 +120,7 @@ L’agent embarque un script Python qui surveille en continu les logs, formate l
 
 #### 2. Installation et configuration
 
-```bash
+```
 git clone https://github.com/anis-metref/securewatch-app.git
 cd securewatch-app/agent
 ```
