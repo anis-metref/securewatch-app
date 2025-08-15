@@ -120,6 +120,10 @@ L’agent embarque un script Python qui surveille en continu les logs, formate l
 
 #### 2. Installation et configuration
 
+```bash
+git clone https://github.com/anis-metref/securewatch-app.git
+cd securewatch-app/agent
+```
 1. Copiez `.env.example-client` en `.env`.  
 2. Dans `.env`, définissez :  
    - `SW_SERVER_URL=http://<IP_BACKEND>:8787`  
@@ -139,7 +143,6 @@ L’agent embarque un script Python qui surveille en continu les logs, formate l
 Dans le dossier contenant `docker-compose.agent.yml` et le `.env` :
 
 ```bash
-cd agent
 docker compose up -d
 ```
 
