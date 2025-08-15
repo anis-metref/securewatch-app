@@ -86,7 +86,7 @@ docker compose up -d
 
 
 
-## Commandes utiles
+#### Commandes utiles
 
 ```bash
 docker compose logs -f backend   # Voir les logs
@@ -94,7 +94,7 @@ docker compose down              # Arrêter l’app
 docker compose up -d            # Démarrer en arrière-plan
 ```
 
-
+---
 
 # SecureWatch Agent (machines clientes)
 
