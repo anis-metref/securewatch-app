@@ -4,7 +4,7 @@
 
 ## Présentation
 
-**SecureWatch** est une application que j’ai développé pour offrir une vue centralisée et intuitive de l’état de sécurité d’un serveur. Elle permet de surveiller en temps réel les connexions SSH, de lister les adresses IP bloquées par fail2ban, et de visualiser les menaces sur une carte interactive. Son objectif est de fournir aux administrateurs système un outil clair, rapide et efficace pour détecter les comportements suspects et renforcer la sécurité de leurs infrastructures.
+**SecureWatch** est une application que j’ai développé pour offrir une vue centralisée et intuitive de l’état de sécurité d’un serveur. Elle permet de surveiller en temps réel les connexions **ssh**, de lister les adresses **ip bloquées par fail2ban**, et de visualiser les menaces sur une **carte interactive**. Son objectif est de fournir aux administrateurs système un outil clair, rapide et efficace pour détecter les comportements suspects et renforcer la sécurité de leurs infrastructures.
 
 ## Architecture technique
 
@@ -16,8 +16,8 @@
 
 ## Fonctionnalités principales
 
-- **Dashboard** : stats SSH, IP bloquées, chart, carte geo des tops attack par pays, événements récents.
-- **Carte des menaces** : géolocalisation des IP malveillantes.
+- **Dashboard** : stats ssh, ip bloquées, chart, carte geo des tops attack par pays, événements récents.
+- **Carte des menaces** : géolocalisation des ip malveillantes.
 - **Gestion des IP** : bannissement/débannissement automatique et manuel.
 - **Notifications** : envoi de  vers discord et slack.
 - **Exports** : CSV et PDF des logs ssh et ip bloquées.
