@@ -141,8 +141,11 @@ L’agent se connecte automatiquement au serveur et apparaît dans l’interface
 
 - Pour retirer un agent à tout moment, stoppez ou supprimez son container et/ou son token d’enregistrement depuis l’UI.  
 - Vous pourrez bannir et débannir les IP de ce client directement depuis le tableau de bord et suivre ses événements SSH en temps réel.
+**remarque** : Si vous supprimez le client depuis l’interface, pensez à le recréer securewatch-agent pour générer un nouveau token et lui permettre de communiquer à nouveau avec le serveur.
 ![agent-events](./screens/3.png)
 
-![slack](./screens/6.png)
+![maps](./screens/6.png)
 
-![agent-events](./screens/5.png)
+![ssh](./screens/5.png)
+
+![slack](./screens/4-slack.png)
