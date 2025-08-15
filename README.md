@@ -74,13 +74,10 @@ docker compose up -d
 ### 5. Accès
 
 - Frontend : [http://localhost:5173](http://localhost:5173)
-- API santé : [http://localhost:8787/api/health](http://localhost:8787/api/health)
-
-## Infos complémentaires
-
 - Admin par défaut : `admin / admin` (à changer au premier login)
-- Base SQLite persistée dans `/app/data`
-- Le frontend proxy `/api` vers le backend (voir `frontend/nginx.conf`)
+- API backend : [http://localhost:8787/api/health](http://localhost:8787/api/health)
+
+
 
 ## Commandes utiles
 
