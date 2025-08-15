@@ -142,6 +142,9 @@ L’agent se connecte automatiquement au serveur et apparaît dans l’interface
 - Pour retirer un agent à tout moment, stoppez ou supprimez son container et/ou son token d’enregistrement depuis l’UI.  
 - Vous pourrez bannir et débannir les IP de ce client directement depuis le tableau de bord et suivre ses événements SSH en temps réel.
 **remarque** : Si vous supprimez le client depuis l’interface, pensez à le recréer securewatch-agent pour générer un nouveau token et lui permettre de communiquer à nouveau avec le serveur.
+
+Découvre mes images Docker prêtes à l’emploi sur dockerhub 👉 [Clique ici pour explorer](https://hub.docker.com/search?q=anismf)
+
 ![agent-events](./screens/3.png)
 
 ![maps](./screens/6.png)
