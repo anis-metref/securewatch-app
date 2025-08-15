@@ -1,0 +1,47 @@
+version: '3.8'
+
+services:
+  backend:
+    image: anismf/securewatch-backend:v1
+    container_name: securewatch-backend
+    restart: unless-stopped
+    ports:
+      - "8787:8787"
+    environment:
+      - NODE_ENV=production
+      - DATA_DIR=/app/data
+      - AUTH_LOG_PATH=/logs/auth.log
+      - FAIL2BAN_LOG_PATH=/logs/fail2ban.log
+      - DISCORD_WEBHOOK_URL=${DISCORD_WEBHOOK_URL}
+      - SLACK_WEBHOOK_URL=${SLACK_WEBHOOK_URL}
+      - AGENT_REGISTRATION_SECRET=${AGENT_REGISTRATION_SECRET}
+    volumes:
+      - sqlite_data:/app/data
+      - /var/log/auth.log:/logs/auth.log:ro
+      - /var/log/fail2ban.log:/logs/fail2ban.log:ro
+      - /var/run/fail2ban:/var/run/fail2ban:rw
+      - /etc/fail2ban/jail.d:/etc/fail2ban/jail.d:rw
+      - /etc/fail2ban/filter.d:/etc/fail2ban/filter.d:rw
+      - /etc/fail2ban/fail2ban.d:/etc/fail2ban/fail2ban.d:rw
+      - /etc/fail2ban/action.d:/etc/fail2ban/action.d:rw
+      - /etc/fail2ban/jail.local:/etc/fail2ban/jail.local:rw
+    networks:
+      - app-net
+
+  frontend:
+    image: anismf/securewatch-frontend:v1
+    container_name: securewatch-frontend
+    restart: unless-stopped
+    ports:
+      - "5173:80"
+    depends_on:
+      - backend
+    networks:
+      - app-net
+
+networks:
+  app-net:
+    name: app-net
+
+volumes:
+  sqlite_data:
