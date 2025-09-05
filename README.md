@@ -87,7 +87,7 @@ docker compose up -d
 
 ### 5. Accès
 
-- **Frontend** : [http://localhost:5173](http://localhost:5173)
+- **Frontend** : [http://localhost:5173](http://localhost:9999)
 - **Identifiants par défaut** : `admin / admin` (à changer au premier login)
 - **API backend** : [http://localhost:8787/api/health](http://localhost:8787/api/health)
 
