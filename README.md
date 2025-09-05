@@ -55,7 +55,7 @@ cd securewatch-app
 Copiez le fichier de configuration jail-sshd afin de le personnaliser selon vos besoins en matière de sécurité et de surveillance du service ssh.
 
 ```bash
-sudo cp jail-sshd.conf /etc/fail2ban/jail.d/jail-sshd,conf
+sudo cp jail-sshd.conf /etc/fail2ban/jail.d/jail-sshd.conf
 
 ```
 
