@@ -157,7 +157,7 @@ L’agent se connecte automatiquement au serveur et apparaît dans l’interface
 - Si vous supprimez le client depuis l’interface, pensez à le recréer securewatch-agent pour générer un nouveau token et lui permettre de communiquer à nouveau avec le serveur.
 - Pense à placer l'application derrière un reverse proxy comme traefik pour renforcer la sécurité, gérer les accès et centraliser le SSL.
 
-Découvrez mes images docker prêtes à l’emploi sur dockerhub 👉 [Clique ici pour explorer](https://hub.docker.com/r/anismf/securewatch-frontend)
+Découvrez mes images docker prêtes à l’emploi sur dockerhub  [Clique ici pour explorer](https://hub.docker.com/r/anismf/securewatch-frontend)
 
 ![agent-events](./screens/3.png)
 
