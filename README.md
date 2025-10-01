@@ -161,7 +161,7 @@ Découvrez mes images docker prêtes à l’emploi sur dockerhub  [Clique ici po
 
 ![agent-events](./screens/3.png)
 
-![maps](./screens/6.png)
+![geo-maps](./screens/6.png)
 
 ![ssh](./screens/5.png)
 
